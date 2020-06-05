@@ -28,7 +28,7 @@ class InstitutionController extends Controller
     public function index()
     {
         $institutions = Institution::all();
-        return $this->successResponse($institutions);
+        return $this->showAll($institutions);
     }
     /**
      * Creates an instance of institution$institution
