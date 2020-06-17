@@ -13,7 +13,11 @@ class Institution extends Model
      * @var array
      */
     protected $fillable = [
-        'name', 'description','address','acronym','logo'
+        'name', 'description','address','acronym','logo', 'encryptedImgName','extensionImg',
     ];
 
+    protected $hidden = [
+        'encryptedImgName','extensionImg',
+    ];
+    
 }

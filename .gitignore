@@ -4,3 +4,4 @@ Homestead.json
 Homestead.yaml
 .phpunit.result.cache
 database/database.sqlite
+!/public/itemsphotos/udg.png

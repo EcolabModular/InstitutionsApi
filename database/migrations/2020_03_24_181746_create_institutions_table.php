@@ -19,7 +19,9 @@ class CreateInstitutionsTable extends Migration
             $table->string('description', 1000);
             $table->string('address');
             $table->string('acronym');
-            $table->string('logo')->nullable();
+            $table->string('logo')->nullable()->default(url('/') . '/instiphotos/cucei.png');
+            $table->string('encryptedImgName')->nullable()->default(null);
+            $table->string('extensionImg')->nullable()->default(null);
             $table->timestamps();
         });
     }
